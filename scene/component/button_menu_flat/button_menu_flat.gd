@@ -1,4 +1,10 @@
 extends Control
 
-func menu_data(name):
-	$Button/Label.text = str(name)
+signal menu_pressed
+
+func menu_data(name, image):
+	$Button/Name.text = str(name)
+	$Button/Image.texture = image 
+func _on_button_pressed() -> void:
+	menu_pressed.emit()
+	pass # Replace with function body.

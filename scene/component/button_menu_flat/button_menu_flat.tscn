@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://crkflbkkgyhuj" path="res://asset_sementaera/Place holder.png" id="1_bien1"]
 
 [node name="ButtonMenuFlat" type="Control" unique_id=1893554301]
+custom_minimum_size = Vector2(500, 100)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -18,7 +19,7 @@ offset_right = 500.0
 offset_bottom = 100.0
 theme_override_font_sizes/font_size = 32
 
-[node name="TextureRect" type="TextureRect" parent="Button" unique_id=889804112]
+[node name="Image" type="TextureRect" parent="Button" unique_id=889804112]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
@@ -29,7 +30,7 @@ offset_bottom = 50.0
 grow_vertical = 2
 texture = ExtResource("1_bien1")
 
-[node name="Label" type="Label" parent="Button" unique_id=635059051]
+[node name="Name" type="Label" parent="Button" unique_id=635059051]
 layout_mode = 1
 anchors_preset = 6
 anchor_left = 1.0
@@ -45,3 +46,5 @@ theme_override_font_sizes/font_size = 32
 text = "[BUTTON MENU]"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

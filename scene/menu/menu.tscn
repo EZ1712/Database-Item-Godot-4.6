@@ -1,0 +1,83 @@
+[gd_scene format=3 uid="uid://bc60hj8egqj4b"]
+
+[ext_resource type="PackedScene" uid="uid://b4nun82vnj6wi" path="res://scene/component/button_menu.tscn" id="1_ny6dg"]
+[ext_resource type="Script" uid="uid://dd5p0srrfw3eb" path="res://scene/menu/menu.gd" id="1_wwfty"]
+
+[node name="Menu" type="Control" unique_id=768281444]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wwfty")
+
+[node name="Label" type="Label" parent="." unique_id=114721441]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 23.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 44
+text = "[DATABASE]"
+horizontal_alignment = 1
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1806104680]
+visible = false
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -354.0
+offset_bottom = 450.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ScrollContainer" unique_id=916641574]
+layout_mode = 2
+theme_override_constants/separation = 230
+alignment = 2
+
+[node name="ButtonMenu" parent="ScrollContainer/HBoxContainer" unique_id=1645686537 instance=ExtResource("1_ny6dg")]
+layout_mode = 2
+
+[node name="ButtonMenu2" parent="ScrollContainer/HBoxContainer" unique_id=1037204626 instance=ExtResource("1_ny6dg")]
+layout_mode = 2
+
+[node name="ButtonMenu3" parent="ScrollContainer/HBoxContainer" unique_id=847591035 instance=ExtResource("1_ny6dg")]
+layout_mode = 2
+
+[node name="ButtonMenu4" parent="ScrollContainer/HBoxContainer" unique_id=169083694 instance=ExtResource("1_ny6dg")]
+layout_mode = 2
+
+[node name="ButtonMenu5" parent="ScrollContainer/HBoxContainer" unique_id=1086229185 instance=ExtResource("1_ny6dg")]
+layout_mode = 2
+
+[node name="ButtonMenu6" parent="ScrollContainer/HBoxContainer" unique_id=1300638448 instance=ExtResource("1_ny6dg")]
+layout_mode = 2
+
+[node name="MenuPreview" type="Control" parent="." unique_id=1900828007]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -214.0
+offset_bottom = 345.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MenuPreview" unique_id=590503281]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 210
+alignment = 1
+
+[node name="ButtonMenu" parent="MenuPreview/HBoxContainer" unique_id=708675439 instance=ExtResource("1_ny6dg")]
+visible = false
+layout_mode = 2

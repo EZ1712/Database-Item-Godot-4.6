@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bsi6cxw7huj7q"]
 
 [ext_resource type="PackedScene" uid="uid://c5lnbv6f0hss0" path="res://scene/component/preview_button.tscn" id="1_a5fix"]
-[ext_resource type="Script" uid="uid://b31vlyb6v4gku" path="res://Scene/menu/preview_detail.gd" id="1_fcxq7"]
+[ext_resource type="Script" uid="uid://b31vlyb6v4gku" path="res://scene/menu/preview_detail.gd" id="1_fcxq7"]
 
 [node name="PreviewDetail" type="Control" unique_id=1576865127]
 layout_mode = 3

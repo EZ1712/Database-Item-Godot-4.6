@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://bcpuoycavgge2"]
+
+[ext_resource type="Script" uid="uid://ddy51cdd4a3ix" path="res://scene/component/detail/detail.gd" id="1_0q56g"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wcsw1"]
+
+[node name="Detail" type="Control" unique_id=128637850]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0q56g")
+
+[node name="LabelDatabase" type="Label" parent="." unique_id=1172536206]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 280.0
+offset_bottom = 97.0
+theme_override_font_sizes/font_size = 48
+text = "[Database]"
+
+[node name="ButtonBack" type="Button" parent="." unique_id=1005458727]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -110.0
+offset_top = 19.0
+offset_right = -30.0
+offset_bottom = 99.0
+grow_horizontal = 0
+
+[node name="Panel" type="Panel" parent="." unique_id=2078099989]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -930.0
+offset_top = -430.0
+offset_right = 930.0
+offset_bottom = 502.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Panel" unique_id=311432841]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = -280.0
+offset_right = 402.0
+offset_bottom = -220.0
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_wcsw1")
+
+[node name="Label" type="Label" parent="Panel/Panel" unique_id=1182016054]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.5
+offset_top = -11.5
+offset_right = 48.5
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "[name]"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]

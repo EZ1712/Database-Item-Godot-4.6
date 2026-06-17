@@ -95,25 +95,33 @@ theme_override_constants/v_separation = 20
 columns = 6
 
 [node name="ButtonPreview" parent="PreviewList/ScrollContainer/GridContainer" unique_id=2031525819 instance=ExtResource("3_arsn6")]
+visible = false
 layout_mode = 2
 
 [node name="ButtonPreview2" parent="PreviewList/ScrollContainer/GridContainer" unique_id=1191045510 instance=ExtResource("3_arsn6")]
+visible = false
 layout_mode = 2
 
 [node name="ButtonPreview3" parent="PreviewList/ScrollContainer/GridContainer" unique_id=123353392 instance=ExtResource("3_arsn6")]
+visible = false
 layout_mode = 2
 
 [node name="ButtonPreview4" parent="PreviewList/ScrollContainer/GridContainer" unique_id=318305826 instance=ExtResource("3_arsn6")]
+visible = false
 layout_mode = 2
 
 [node name="ButtonPreview5" parent="PreviewList/ScrollContainer/GridContainer" unique_id=196626082 instance=ExtResource("3_arsn6")]
+visible = false
 layout_mode = 2
 
 [node name="ButtonPreview6" parent="PreviewList/ScrollContainer/GridContainer" unique_id=1961443557 instance=ExtResource("3_arsn6")]
+visible = false
 layout_mode = 2
 
 [node name="ButtonPreview7" parent="PreviewList/ScrollContainer/GridContainer" unique_id=480356343 instance=ExtResource("3_arsn6")]
+visible = false
 layout_mode = 2
 
 [node name="ButtonPreview8" parent="PreviewList/ScrollContainer/GridContainer" unique_id=1744554459 instance=ExtResource("3_arsn6")]
+visible = false
 layout_mode = 2

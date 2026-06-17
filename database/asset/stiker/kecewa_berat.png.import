@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b01qxuovoklrj"
-path="res://.godot/imported/image2.png-26283847e0e14dafe60fab6afb7a631b.ctex"
+uid="uid://rvc1ittp754p"
+path="res://.godot/imported/kecewa_berat.png-0c9df20749355835ef2521e7354455fa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://database/asset/image2.png"
-dest_files=["res://.godot/imported/image2.png-26283847e0e14dafe60fab6afb7a631b.ctex"]
+source_file="res://database/asset/stiker/kecewa_berat.png"
+dest_files=["res://.godot/imported/kecewa_berat.png-0c9df20749355835ef2521e7354455fa.ctex"]
 
 [params]
 

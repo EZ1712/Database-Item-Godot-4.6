@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cds2qt7ueh4wy"
-path="res://.godot/imported/image3.png-ee9c5a4d3f0ed03a295779d3822a07c0.ctex"
+uid="uid://cecsrlpxtci6o"
+path="res://.godot/imported/Rectangle 80.png-87ed8b6921c4cdfab24aef5a940cc4e3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://database/asset/image3.png"
-dest_files=["res://.godot/imported/image3.png-ee9c5a4d3f0ed03a295779d3822a07c0.ctex"]
+source_file="res://asset_sementaera/Rectangle 80.png"
+dest_files=["res://.godot/imported/Rectangle 80.png-87ed8b6921c4cdfab24aef5a940cc4e3.ctex"]
 
 [params]
 

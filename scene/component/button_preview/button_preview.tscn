@@ -1,7 +1,18 @@
 [gd_scene format=3 uid="uid://bphgityydx8gj"]
 
 [ext_resource type="Script" uid="uid://bgxjlnegk5o8h" path="res://scene/component/button_preview/button_preview.gd" id="1_ma63y"]
-[ext_resource type="Texture2D" uid="uid://cecsrlpxtci6o" path="res://asset_sementaera/Rectangle 80.png" id="2_ma63y"]
+[ext_resource type="Texture2D" uid="uid://dnnbqp5464dfs" path="res://database/asset/stiker/agak_dongo_tapi_gapapa.png" id="2_ma63y"]
+[ext_resource type="Texture2D" uid="uid://cxj8f5221g03s" path="res://assets/border_rarity.png" id="3_fo2ws"]
+
+[sub_resource type="Gradient" id="Gradient_fo2ws"]
+offsets = PackedFloat32Array(0, 0.2451613)
+colors = PackedColorArray(0.99215686, 0.015686275, 0, 1, 0.99215686, 0.015686275, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wkoui"]
+resource_local_to_scene = true
+gradient = SubResource("Gradient_fo2ws")
+fill_from = Vector2(0.56164384, 1)
+fill_to = Vector2(0.55707765, 0)
 
 [node name="ButtonPreview" type="Control" unique_id=2031525819]
 custom_minimum_size = Vector2(190, 250)
@@ -35,6 +46,48 @@ offset_bottom = 90.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_ma63y")
+
+[node name="RarityBorder" type="TextureRect" parent="Button" unique_id=1021134955]
+visible = false
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 185.0
+offset_bottom = 185.0
+texture = SubResource("GradientTexture2D_wkoui")
+
+[node name="Label" type="Label" parent="Button" unique_id=722412942]
+visible = false
+layout_mode = 0
+offset_left = 10.0
+offset_top = 145.0
+offset_right = 98.0
+offset_bottom = 180.0
+theme_override_font_sizes/font_size = 25
+text = "[Rarity]"
+
+[node name="ColorRect" type="ColorRect" parent="Button" unique_id=2080899568]
+visible = false
+layout_mode = 0
+offset_left = 5.0
+offset_top = 180.0
+offset_right = 185.0
+offset_bottom = 185.0
+
+[node name="TextureRect" type="TextureRect" parent="Button" unique_id=1506836489]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -90.0
+offset_right = 90.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_fo2ws")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1822490792]
 layout_mode = 1

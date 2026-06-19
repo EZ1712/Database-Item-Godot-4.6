@@ -4,6 +4,14 @@
 [ext_resource type="Script" uid="uid://bvwg7soshubp1" path="res://scene/menu_and_preview/menu_and_preview.gd" id="1_wldhc"]
 [ext_resource type="PackedScene" uid="uid://bphgityydx8gj" path="res://scene/component/button_preview/button_preview.tscn" id="3_arsn6"]
 
+[sub_resource type="Theme" id="Theme_gklim"]
+OptionButton/font_sizes/font_size = 23
+PopupMenu/font_sizes/font_size = 23
+
+[sub_resource type="Theme" id="Theme_arsn6"]
+OptionButton/font_sizes/font_size = 23
+PopupMenu/font_sizes/font_size = 23
+
 [node name="MenuAndPreview" type="Control" unique_id=2043511403]
 layout_mode = 3
 anchors_preset = 15
@@ -125,3 +133,124 @@ layout_mode = 2
 [node name="ButtonPreview8" parent="PreviewList/ScrollContainer/GridContainer" unique_id=1744554459 instance=ExtResource("3_arsn6")]
 visible = false
 layout_mode = 2
+
+[node name="Panel" type="Panel" parent="." unique_id=1840468527]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 556.0
+offset_top = -97.0
+offset_right = 1056.0
+offset_bottom = -17.0
+grow_vertical = 0
+
+[node name="Filter" type="Label" parent="Panel" unique_id=681972579]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 24.0
+offset_top = -17.0
+offset_right = 225.0
+offset_bottom = 17.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Filter : "
+
+[node name="OptionButton" type="OptionButton" parent="Panel/Filter" unique_id=226749412]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -117.0
+offset_top = -21.0
+offset_right = 3.0
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = SubResource("Theme_gklim")
+alignment = 1
+selected = 0
+item_count = 2
+popup/item_0/text = "Default"
+popup/item_0/id = 0
+popup/item_1/text = "Name"
+popup/item_1/id = 1
+
+[node name="Sort" type="Label" parent="Panel" unique_id=117118488]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -225.0
+offset_top = -17.0
+offset_right = 57.0
+offset_bottom = 17.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "Sort : "
+
+[node name="ButtonAscending" type="Button" parent="Panel/Sort" unique_id=1280640007]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -21.0
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 23
+text = "ASC"
+
+[node name="OptionButton" type="OptionButton" parent="Panel/Sort" unique_id=1994555749]
+visible = false
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -120.0
+offset_top = -21.0
+offset_bottom = 21.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = SubResource("Theme_arsn6")
+alignment = 1
+selected = 0
+item_count = 2
+popup/item_0/text = "ASC"
+popup/item_0/id = 0
+popup/item_1/text = "DESC"
+popup/item_1/id = 1
+
+[node name="OptionButton2" type="OptionButton" parent="Panel/Sort" unique_id=465261934]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -199.0
+offset_top = -15.5
+offset_right = -120.0
+offset_bottom = 15.5
+grow_horizontal = 0
+grow_vertical = 2
+item_count = 2
+popup/item_0/text = "Name"
+popup/item_0/id = 0
+popup/item_1/text = "Rarity"
+popup/item_1/id = 1
+
+[connection signal="pressed" from="Panel/Sort/ButtonAscending" to="." method="_on_button_ascending_pressed"]
+[connection signal="item_selected" from="Panel/Sort/OptionButton" to="." method="_on_option_button_item_selected"]

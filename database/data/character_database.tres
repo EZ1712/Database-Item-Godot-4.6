@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="GameDatabase" format=3 uid="uid://bqfxd15ghv7n2"]
+
+[ext_resource type="Script" uid="uid://c8sjqdol2rr0o" path="res://database/gamedatabse.gd" id="4_n54kt"]
+
+[resource]
+script = ExtResource("4_n54kt")
+data = {
+0: {
+"description": "dwa",
+"image": "res://database/asset/character/gilberta_preview.png",
+"image_preview": "res://database/asset/character/gilberta_preview.png",
+"name": "Gilberta",
+"rarity": 5
+},
+1: {
+"description": "dwa",
+"image": "res://database/asset/character/arina_preview.png",
+"image_preview": "res://database/asset/character/arina_preview.png",
+"name": "Arina",
+"rarity": 5
+},
+2: {
+"description": "lorem",
+"image": "res://database/asset/character/fuka_preview.png",
+"image_preview": "res://database/asset/character/fuka_preview.png",
+"name": "Fuka",
+"rarity": 6
+}
+}
+metadata/_custom_type_script = "uid://c8sjqdol2rr0o"

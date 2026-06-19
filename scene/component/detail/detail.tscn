@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://bcpuoycavgge2"]
 
 [ext_resource type="Script" uid="uid://ddy51cdd4a3ix" path="res://scene/component/detail/detail.gd" id="1_0q56g"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wcsw1"]
+[ext_resource type="Texture2D" uid="uid://qpovse18ebsj" path="res://asset_sementaera/Place holder 500px.png" id="2_dny06"]
 
 [node name="Detail" type="Control" unique_id=128637850]
 layout_mode = 3
@@ -33,7 +32,7 @@ offset_right = -30.0
 offset_bottom = 99.0
 grow_horizontal = 0
 
-[node name="Panel" type="Panel" parent="." unique_id=2078099989]
+[node name="PanelMain" type="Panel" parent="." unique_id=2078099989]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -47,34 +46,111 @@ offset_bottom = 502.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Panel" type="Panel" parent="Panel" unique_id=311432841]
+[node name="ControlDetail" type="Control" parent="PanelMain" unique_id=374751074]
 layout_mode = 1
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 50.0
-offset_top = -280.0
-offset_right = 402.0
-offset_bottom = -220.0
+offset_top = -432.0
+offset_right = 550.0
+offset_bottom = -43.00067
 grow_vertical = 0
-theme_override_styles/panel = SubResource("StyleBoxFlat_wcsw1")
 
-[node name="Label" type="Label" parent="Panel/Panel" unique_id=1182016054]
+[node name="PanelDetail" type="VBoxContainer" parent="PanelMain/ControlDetail" unique_id=198680406]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -93.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="Panel" type="PanelContainer" parent="PanelMain/ControlDetail/PanelDetail" unique_id=630373094]
+custom_minimum_size = Vector2(500, 70)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelMain/ControlDetail/PanelDetail/Panel" unique_id=816845290]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 10
+
+[node name="LabelName" type="Label" parent="PanelMain/ControlDetail/PanelDetail/Panel/MarginContainer" unique_id=444825267]
+custom_minimum_size = Vector2(460, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 32
+text = "[Name]"
+autowrap_mode = 3
+
+[node name="MarginContainer2" type="Control" parent="PanelMain/ControlDetail/PanelDetail/Panel" unique_id=1221644567]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="ColorRect" type="ColorRect" parent="PanelMain/ControlDetail/PanelDetail/Panel/MarginContainer2" unique_id=955857041]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -250.0
+offset_top = -6.0
+offset_right = 250.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelMain/ControlDetail/PanelDetail" unique_id=2055077456]
+custom_minimum_size = Vector2(0, 350)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelMain/ControlDetail/PanelDetail/PanelContainer" unique_id=1216639084]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelMain/ControlDetail/PanelDetail/PanelContainer/MarginContainer" unique_id=527369331]
+layout_mode = 2
+
+[node name="LabelRarity" type="Label" parent="PanelMain/ControlDetail/PanelDetail/PanelContainer/MarginContainer/VBoxContainer" unique_id=80407287]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "[Rarity]"
+
+[node name="LabelCategory" type="Label" parent="PanelMain/ControlDetail/PanelDetail/PanelContainer/MarginContainer/VBoxContainer" unique_id=1294702922]
+layout_mode = 2
+theme_override_font_sizes/font_size = 24
+text = "[Category]"
+
+[node name="HSeparator" type="HSeparator" parent="PanelMain/ControlDetail/PanelDetail/PanelContainer/MarginContainer/VBoxContainer" unique_id=1920122152]
+layout_mode = 2
+
+[node name="LabelDescription" type="RichTextLabel" parent="PanelMain/ControlDetail/PanelDetail/PanelContainer/MarginContainer/VBoxContainer" unique_id=1700956513]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 24
+text = "[Description]
+"
+fit_content = true
+
+[node name="TextureImage" type="TextureRect" parent="PanelMain" unique_id=1300142076]
+custom_minimum_size = Vector2(500, 500)
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -48.5
-offset_top = -11.5
-offset_right = 48.5
-offset_bottom = 11.5
+offset_left = -250.0
+offset_top = -250.0
+offset_right = 250.0
+offset_bottom = 250.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 32
-text = "[name]"
-horizontal_alignment = 1
-vertical_alignment = 1
+texture = ExtResource("2_dny06")
 
 [connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]

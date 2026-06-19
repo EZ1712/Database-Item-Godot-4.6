@@ -5,7 +5,7 @@ signal menu_diklik(database_data)
 @onready var label_title: Label = $PanelTitle/LabelTitle
 
 func _ready() -> void:
-	$PanelTitle/LabelTitle.pressed.connect(emit_custom_signal)
+	#$PanelTitle/LabelTitle.pressed.connect(emit_custom_signal)
 	pass
 
 func preview_data(db_data):

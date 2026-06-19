@@ -1,32 +1,57 @@
 [gd_resource type="Resource" script_class="GameDatabase" format=3 uid="uid://dnt17xsvsweu3"]
 
-[ext_resource type="Texture2D" uid="uid://bu64t5o7ufrl7" path="res://database/asset/stiker/nungguin_rilis_ya.png" id="1_il8sd"]
-[ext_resource type="Script" uid="uid://c8sjqdol2rr0o" path="res://database/ganedatabse.gd" id="1_pnk1f"]
-[ext_resource type="Texture2D" uid="uid://rvc1ittp754p" path="res://database/asset/stiker/kecewa_berat.png" id="2_xbnyq"]
-[ext_resource type="Texture2D" uid="uid://dnnbqp5464dfs" path="res://database/asset/stiker/agak_dongo_tapi_gapapa.png" id="3_vijmn"]
+[ext_resource type="Script" uid="uid://c8sjqdol2rr0o" path="res://database/gamedatabse.gd" id="4_il8sd"]
 
 [resource]
-script = ExtResource("1_pnk1f")
+script = ExtResource("4_il8sd")
 data = {
 0: {
 "description": "dadwa",
-"image": null,
-"image_preview": ExtResource("1_il8sd"),
+"image": "res://database/asset/stiker/nungguin_rilis_ya.png",
+"image_preview": "res://database/asset/stiker/nungguin_rilis_ya.png",
 "name": "Nungguin rilis ya?",
 "rarity": 5
 },
 1: {
 "description": "hrwda",
-"image": null,
-"image_preview": ExtResource("2_xbnyq"),
+"image": "res://database/asset/stiker/kecewa_berat.png",
+"image_preview": "res://database/asset/stiker/kecewa_berat.png",
 "name": "Kecewa Berat",
 "rarity": 6
 },
 2: {
 "description": "mjade",
-"image": null,
-"image_preview": ExtResource("3_vijmn"),
+"image": "res://database/asset/stiker/agak_dongo_tapi_gapapa.png",
+"image_preview": "res://database/asset/stiker/agak_dongo_tapi_gapapa.png",
 "name": "Agak dongo tapi gapapa",
+"rarity": 5
+},
+3: {
+"description": "orang gila memang",
+"image": "res://database/asset/stiker/gila_sih.png",
+"image_preview": "res://database/asset/stiker/gila_sih.png",
+"name": "Gila sih",
+"rarity": 5
+},
+4: {
+"description": "memang gak logis",
+"image": "res://database/asset/stiker/gak_logis.png",
+"image_preview": "res://database/asset/stiker/gak_logis.png",
+"name": "Gak logis",
+"rarity": 6
+},
+5: {
+"description": "Kelas SMP bang",
+"image": "res://database/asset/stiker/kelas_king.png",
+"image_preview": "res://database/asset/stiker/kelas_king.png",
+"name": "Kelas king",
+"rarity": 4
+},
+6: {
+"description": "gw udah muak sumpah",
+"image": "res://database/asset/stiker/malas_menanggapi.png",
+"image_preview": "res://database/asset/stiker/malas_menanggapi.png",
+"name": "Malas Menanggapi",
 "rarity": 5
 }
 }

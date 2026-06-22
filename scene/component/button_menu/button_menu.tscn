@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bf5vncx51mm8t"]
+
+[ext_resource type="Script" uid="uid://cem8432qungdy" path="res://scene/component/button_menu/button_menu.gd" id="1_2xcqf"]
+[ext_resource type="Texture2D" uid="uid://dhflxnaegf40p" path="res://asset_sementaera/stiker.png" id="1_hmgfs"]
+
+[node name="ButtonMenu" type="Control" unique_id=576159419]
+custom_minimum_size = Vector2(250, 600)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2xcqf")
+
+[node name="Button" type="Button" parent="." unique_id=971243835]
+layout_mode = 0
+offset_right = 250.0
+offset_bottom = 600.0
+
+[node name="TextureRect" type="TextureRect" parent="Button" unique_id=595315338]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -75.0
+offset_top = -110.0
+offset_right = 75.0
+offset_bottom = 40.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_hmgfs")
+
+[node name="LabelTitle" type="Label" parent="Button" unique_id=752012423]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 380.0
+offset_bottom = 403.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 24
+text = "[NAME TITLE]"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -53,6 +53,7 @@ func preview_display(database, sort_data : Array = []):
 	
 	if sort_data.is_empty():
 		id_data = direct_database.keys()
+	#var id_data = sorting(database)
 	
 	for id in id_data:
 		var data = direct_database[id]

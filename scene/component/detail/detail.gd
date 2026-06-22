@@ -9,6 +9,7 @@ var menu_and_preview : PackedScene = load("res://scene/menu_and_preview/menu_and
 
 var sorting_method_send : String
 var database_current : String
+var filter_target_send : String
 
 func detail_data(database, id):
 	var raw_database : Dictionary = self.get(database)
@@ -36,8 +37,17 @@ func _on_button_back_pressed() -> void:
 	get_tree().current_scene = menu_preview_scene
 	
 	menu_preview_scene.sorting_method = sorting_method_send
+	#menu_preview_scene.
 	#menu_preview_scene.data_from_detail(database_current,sorting_method_send)
 	
+	
+	menu_preview_scene.current_database = database_current
+	menu_preview_scene.filter_target = filter_target_send
 	menu_preview_scene.preview_display(database_current)
-	menu_preview_scene.preview_sorting()
+	menu_preview_scene.ui_change()
+	
 	queue_free()
+
+
+func _on_debug_pressed() -> void:
+	print(database_current)

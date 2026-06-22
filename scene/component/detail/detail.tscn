@@ -153,4 +153,12 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_dny06")
 
+[node name="Debug" type="Button" parent="." unique_id=1019839752]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 211.0
+text = "debug
+"
+
 [connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="Debug" to="." method="_on_debug_pressed"]

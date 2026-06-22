@@ -1,16 +1,10 @@
 [gd_scene format=3 uid="uid://dmhuvbeoyjw7g"]
 
-[ext_resource type="PackedScene" uid="uid://6u56fmymxjfc" path="res://scene/component/button_menu_flat/button_menu_flat.tscn" id="1_11whm"]
 [ext_resource type="Script" uid="uid://bvwg7soshubp1" path="res://scene/menu_and_preview/menu_and_preview.gd" id="1_wldhc"]
-[ext_resource type="PackedScene" uid="uid://bphgityydx8gj" path="res://scene/component/button_preview/button_preview.tscn" id="3_arsn6"]
-
-[sub_resource type="Theme" id="Theme_gklim"]
-OptionButton/font_sizes/font_size = 23
-PopupMenu/font_sizes/font_size = 23
 
 [sub_resource type="Theme" id="Theme_arsn6"]
-OptionButton/font_sizes/font_size = 23
-PopupMenu/font_sizes/font_size = 23
+OptionButton/font_sizes/font_size = 24
+PopupMenu/font_sizes/font_size = 24
 
 [node name="MenuAndPreview" type="Control" unique_id=2043511403]
 layout_mode = 3
@@ -21,7 +15,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_wldhc")
 
-[node name="Label" type="Label" parent="." unique_id=1313044148]
+[node name="LabelTitle" type="Label" parent="." unique_id=1313044148]
 layout_mode = 0
 offset_left = 30.0
 offset_top = 30.0
@@ -29,28 +23,6 @@ offset_right = 282.0
 offset_bottom = 97.0
 theme_override_font_sizes/font_size = 48
 text = "[DataBase]"
-
-[node name="MenuListTest" type="Control" parent="." unique_id=2081045047]
-visible = false
-anchors_preset = 0
-offset_left = 69.0
-offset_top = 173.0
-offset_right = 495.0
-offset_bottom = 610.0
-
-[node name="ScrollContainer" type="ScrollContainer" parent="MenuListTest" unique_id=583636555]
-layout_mode = 1
-offset_right = 503.0
-offset_bottom = 381.0
-
-[node name="VBoxContainer" type="VBoxContainer" parent="MenuListTest/ScrollContainer" unique_id=997642600]
-layout_mode = 2
-
-[node name="ButtonMenuFlat" parent="MenuListTest/ScrollContainer/VBoxContainer" unique_id=1893554301 instance=ExtResource("1_11whm")]
-layout_mode = 2
-
-[node name="ButtonMenuFlat2" parent="MenuListTest/ScrollContainer/VBoxContainer" unique_id=540408193 instance=ExtResource("1_11whm")]
-layout_mode = 2
 
 [node name="MenuList" type="ScrollContainer" parent="." unique_id=778515691]
 layout_mode = 1
@@ -62,18 +34,6 @@ offset_bottom = 1049.0
 [node name="VBoxContainer" type="VBoxContainer" parent="MenuList" unique_id=1432130912]
 layout_mode = 2
 theme_override_constants/separation = 20
-
-[node name="ButtonMenuFlat" parent="MenuList/VBoxContainer" unique_id=1855473649 instance=ExtResource("1_11whm")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonMenuFlat2" parent="MenuList/VBoxContainer" unique_id=774323138 instance=ExtResource("1_11whm")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonMenuFlat3" parent="MenuList/VBoxContainer" unique_id=1458612636 instance=ExtResource("1_11whm")]
-visible = false
-layout_mode = 2
 
 [node name="PreviewList" type="Panel" parent="." unique_id=1841194705]
 layout_mode = 1
@@ -102,38 +62,6 @@ theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
 columns = 6
 
-[node name="ButtonPreview" parent="PreviewList/ScrollContainer/GridContainer" unique_id=2031525819 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview2" parent="PreviewList/ScrollContainer/GridContainer" unique_id=1191045510 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview3" parent="PreviewList/ScrollContainer/GridContainer" unique_id=123353392 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview4" parent="PreviewList/ScrollContainer/GridContainer" unique_id=318305826 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview5" parent="PreviewList/ScrollContainer/GridContainer" unique_id=196626082 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview6" parent="PreviewList/ScrollContainer/GridContainer" unique_id=1961443557 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview7" parent="PreviewList/ScrollContainer/GridContainer" unique_id=480356343 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview8" parent="PreviewList/ScrollContainer/GridContainer" unique_id=1744554459 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
 [node name="Panel" type="Panel" parent="." unique_id=1840468527]
 layout_mode = 1
 anchors_preset = 2
@@ -141,116 +69,51 @@ anchor_top = 1.0
 anchor_bottom = 1.0
 offset_left = 556.0
 offset_top = -97.0
-offset_right = 1056.0
-offset_bottom = -17.0
+offset_right = 796.0
+offset_bottom = -57.0
 grow_vertical = 0
 
-[node name="Filter" type="Label" parent="Panel" unique_id=681972579]
+[node name="ButtonAscending" type="Button" parent="Panel" unique_id=1280640007]
 layout_mode = 1
 anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-offset_left = 24.0
-offset_top = -17.0
-offset_right = 225.0
-offset_bottom = 17.0
-grow_vertical = 2
-theme_override_font_sizes/font_size = 24
-text = "Filter : "
-
-[node name="OptionButton" type="OptionButton" parent="Panel/Filter" unique_id=226749412]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -117.0
+offset_left = 120.0
 offset_top = -21.0
-offset_right = 3.0
+offset_right = 240.0
 offset_bottom = 21.0
-grow_horizontal = 0
-grow_vertical = 2
-theme = SubResource("Theme_gklim")
-alignment = 1
-selected = 0
-item_count = 2
-popup/item_0/text = "Default"
-popup/item_0/id = 0
-popup/item_1/text = "Name"
-popup/item_1/id = 1
-
-[node name="Sort" type="Label" parent="Panel" unique_id=117118488]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -225.0
-offset_top = -17.0
-offset_right = 57.0
-offset_bottom = 17.0
-grow_horizontal = 0
-grow_vertical = 2
-theme_override_font_sizes/font_size = 24
-text = "Sort : "
-
-[node name="ButtonAscending" type="Button" parent="Panel/Sort" unique_id=1280640007]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -120.0
-offset_top = -21.0
-offset_bottom = 21.0
-grow_horizontal = 0
 grow_vertical = 2
 theme_override_font_sizes/font_size = 23
 text = "ASC"
 
-[node name="OptionButton" type="OptionButton" parent="Panel/Sort" unique_id=1994555749]
-visible = false
+[node name="FilterMenu" type="OptionButton" parent="Panel" unique_id=465261934]
 layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
+anchors_preset = 4
 anchor_top = 0.5
-anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -120.0
-offset_top = -21.0
-offset_bottom = 21.0
-grow_horizontal = 0
+offset_top = -20.0
+offset_right = 120.0
+offset_bottom = 20.0
 grow_vertical = 2
 theme = SubResource("Theme_arsn6")
-alignment = 1
 selected = 0
-item_count = 2
-popup/item_0/text = "ASC"
+item_count = 4
+popup/item_0/text = "Rarity"
 popup/item_0/id = 0
-popup/item_1/text = "DESC"
+popup/item_1/text = "*6"
 popup/item_1/id = 1
+popup/item_2/text = "*5"
+popup/item_2/id = 2
+popup/item_3/text = "*4"
+popup/item_3/id = 3
 
-[node name="OptionButton2" type="OptionButton" parent="Panel/Sort" unique_id=465261934]
-layout_mode = 1
-anchors_preset = 6
-anchor_left = 1.0
-anchor_top = 0.5
-anchor_right = 1.0
-anchor_bottom = 0.5
-offset_left = -199.0
-offset_top = -15.5
-offset_right = -120.0
-offset_bottom = 15.5
-grow_horizontal = 0
-grow_vertical = 2
-item_count = 2
-popup/item_0/text = "Name"
-popup/item_0/id = 0
-popup/item_1/text = "Rarity"
-popup/item_1/id = 1
+[node name="Debug" type="Button" parent="." unique_id=1482663377]
+visible = false
+layout_mode = 0
+offset_right = 500.0
+offset_bottom = 159.0
+text = "DEBUG"
 
-[connection signal="pressed" from="Panel/Sort/ButtonAscending" to="." method="_on_button_ascending_pressed"]
-[connection signal="item_selected" from="Panel/Sort/OptionButton" to="." method="_on_option_button_item_selected"]
+[connection signal="pressed" from="Panel/ButtonAscending" to="." method="_on_button_ascending_pressed"]
+[connection signal="item_selected" from="Panel/FilterMenu" to="." method="_on_filter_menu_item_selected"]
+[connection signal="pressed" from="Debug" to="." method="_on_debug_pressed"]

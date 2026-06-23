@@ -1,5 +1,6 @@
 extends Control
 
+var manager_scene : PackedScene = load("res://manager.tscn")
 var preview_template : PackedScene = load("res://scene/component/button_preview/button_preview.tscn")
 var menu_template : PackedScene = load("res://scene/component/button_menu_flat/button_menu_flat.tscn")
 var detail_template : PackedScene = load("res://scene/component/detail/detail.tscn")
@@ -145,3 +146,7 @@ func _on_filter_menu_item_selected(index: int) -> void:
 
 func _on_debug_pressed() -> void:
 	print(filter_target)
+
+
+func _on_button_back_pressed() -> void:
+	get_tree().change_scene_to_packed(manager_scene)

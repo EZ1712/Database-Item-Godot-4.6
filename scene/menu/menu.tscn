@@ -59,3 +59,16 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
 alignment = 1
+
+[node name="ButtonBack" type="Button" parent="." unique_id=1256249212]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -106.0
+offset_top = 19.0
+offset_right = -26.0
+offset_bottom = 99.0
+grow_horizontal = 0
+
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]

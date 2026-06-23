@@ -4,6 +4,7 @@ extends Control
 @onready var menu_list: HBoxContainer = $MenuPreview/HBoxContainer
 
 #var preview_detail_scene : PackedScene = load("res://scene/menu/preview_detail.tscn")
+var manager_scene : PackedScene = load("res://manager.tscn")
 var preview_template : PackedScene = load("res://scene/preview/preview.tscn")
 var preview_detail_template : PackedScene = load("res://scene/preview_and_detail/preview_and_detail.tscn")
 var menu_template : PackedScene = load("res://scene/component/button_menu/button_menu.tscn")
@@ -28,12 +29,13 @@ func menu_display():
 		menu_list.add_child(button_menu)
 	#pass
 
-#func debug(indikator):
-	#print(str(indikator))
-
 func preview(database, name_database):
-	#var preview_transition = preview_detail_template.instantiate()
-	var preview_transition = preview_template.instantiate()
+	var preview_transition
+	
+	if Global.flow == 1:
+		preview_transition = preview_template.instantiate()
+	elif Global.flow == 2:
+		preview_transition = preview_detail_template.instantiate()
 	
 	get_tree().root.add_child(preview_transition)
 	get_tree().current_scene = preview_transition
@@ -43,4 +45,7 @@ func preview(database, name_database):
 	preview_transition.preview_data()
 	
 	queue_free()
-	pass
+
+
+func _on_button_back_pressed() -> void:
+	get_tree().change_scene_to_packed(manager_scene)

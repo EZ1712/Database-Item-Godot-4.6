@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dmhuvbeoyjw7g"]
 
 [ext_resource type="Script" uid="uid://bvwg7soshubp1" path="res://scene/menu_and_preview/menu_and_preview.gd" id="1_wldhc"]
+[ext_resource type="PackedScene" uid="uid://bphgityydx8gj" path="res://scene/component/button_preview/button_preview.tscn" id="3_arsn6"]
 
 [sub_resource type="Theme" id="Theme_arsn6"]
 OptionButton/font_sizes/font_size = 24
@@ -62,6 +63,9 @@ theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
 columns = 6
 
+[node name="ButtonPreview" parent="PreviewList/ScrollContainer/GridContainer" unique_id=2031525819 instance=ExtResource("3_arsn6")]
+layout_mode = 2
+
 [node name="Panel" type="Panel" parent="." unique_id=1840468527]
 layout_mode = 1
 anchors_preset = 2
@@ -114,6 +118,18 @@ offset_right = 500.0
 offset_bottom = 159.0
 text = "DEBUG"
 
+[node name="ButtonBack" type="Button" parent="." unique_id=1853623840]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -110.0
+offset_top = 19.0
+offset_right = -30.0
+offset_bottom = 99.0
+grow_horizontal = 0
+
 [connection signal="pressed" from="Panel/ButtonAscending" to="." method="_on_button_ascending_pressed"]
 [connection signal="item_selected" from="Panel/FilterMenu" to="." method="_on_filter_menu_item_selected"]
 [connection signal="pressed" from="Debug" to="." method="_on_debug_pressed"]
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]

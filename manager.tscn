@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://c7fe17j1qwm4c"]
 
+[ext_resource type="Script" uid="uid://d2r60ejq2767v" path="res://manager.gd" id="1_453op"]
+
 [node name="Manager" type="Control" unique_id=1874356619]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +9,38 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_453op")
+
+[node name="Label" type="Label" parent="." unique_id=131292182]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Database Dictionary Godot 4.6"
+
+[node name="ButtonFlow1" type="Button" parent="." unique_id=2042249778]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 31.0
+offset_right = 164.0
+offset_bottom = 125.0
+text = "FLOW 1"
+
+[node name="ButtonFlow2" type="Button" parent="." unique_id=387527683]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 166.0
+offset_right = 174.0
+offset_bottom = 266.0
+text = "FLOW 2"
+
+[node name="ButtonFlow3" type="Button" parent="." unique_id=1014601853]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 326.0
+offset_right = 202.0
+offset_bottom = 432.0
+text = "FLOW 3"
+
+[connection signal="pressed" from="ButtonFlow1" to="." method="_on_button_flow_1_pressed"]
+[connection signal="pressed" from="ButtonFlow2" to="." method="_on_button_flow_2_pressed"]
+[connection signal="pressed" from="ButtonFlow3" to="." method="_on_button_flow_3_pressed"]

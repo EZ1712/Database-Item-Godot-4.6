@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkchf6awy5bos"
-path="res://.godot/imported/gak_logis.png-914e8980136669e74bfc69032a9918bb.ctex"
+uid="uid://t3432kchaov8"
+path="res://.godot/imported/untuk_berjaga_jaga_preview.png-c550286be2b3645721c7382a52c92bce.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://database/asset/stiker/gak_logis.png"
-dest_files=["res://.godot/imported/gak_logis.png-914e8980136669e74bfc69032a9918bb.ctex"]
+source_file="res://database/asset/stiker/untuk_berjaga_jaga_preview.png"
+dest_files=["res://.godot/imported/untuk_berjaga_jaga_preview.png-c550286be2b3645721c7382a52c92bce.ctex"]
 
 [params]
 

@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bc60hj8egqj4b"]
 
 [ext_resource type="Script" uid="uid://dd5p0srrfw3eb" path="res://scene/menu/menu.gd" id="1_wwfty"]
-[ext_resource type="PackedScene" uid="uid://bf5vncx51mm8t" path="res://scene/component/button_menu/button_menu.tscn" id="2_wwfty"]
 
 [node name="Menu" type="Control" unique_id=768281444]
 layout_mode = 3
@@ -60,15 +59,3 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
 alignment = 1
-
-[node name="ButtonMenu" parent="MenuPreview/HBoxContainer" unique_id=576159419 instance=ExtResource("2_wwfty")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonMenu2" parent="MenuPreview/HBoxContainer" unique_id=1465600608 instance=ExtResource("2_wwfty")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonMenu3" parent="MenuPreview/HBoxContainer" unique_id=1265399780 instance=ExtResource("2_wwfty")]
-visible = false
-layout_mode = 2

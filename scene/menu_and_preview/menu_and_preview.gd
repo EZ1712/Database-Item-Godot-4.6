@@ -76,6 +76,7 @@ func detail(database, id):
 	
 	detail_scene.sorting_method_send  = sorting_method
 	detail_scene.filter_target_send = filter_target
+	detail_scene.title_send = title
 	detail_scene.detail_data(database, id)
 	
 	queue_free()

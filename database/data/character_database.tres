@@ -14,8 +14,8 @@ data = {
 },
 1: {
 "description": "dwa",
-"image": "res://database/asset/character/arina_preview.png",
-"image_preview": "res://database/asset/character/arina_preview.png",
+"image": "uid://26hv3xsv8cet",
+"image_preview": "uid://ylaartdcpdpk",
 "name": "Arina",
 "rarity": 5
 },

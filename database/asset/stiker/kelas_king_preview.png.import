@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkchf6awy5bos"
-path="res://.godot/imported/gak_logis.png-914e8980136669e74bfc69032a9918bb.ctex"
+uid="uid://cq7cyeoicbmie"
+path="res://.godot/imported/kelas_king_preview.png-d8a8b28de421b225d65a466623805b89.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://database/asset/stiker/gak_logis.png"
-dest_files=["res://.godot/imported/gak_logis.png-914e8980136669e74bfc69032a9918bb.ctex"]
+source_file="res://database/asset/stiker/kelas_king_preview.png"
+dest_files=["res://.godot/imported/kelas_king_preview.png-d8a8b28de421b225d65a466623805b89.ctex"]
 
 [params]
 

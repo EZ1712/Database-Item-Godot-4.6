@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkchf6awy5bos"
-path="res://.godot/imported/gak_logis.png-914e8980136669e74bfc69032a9918bb.ctex"
+uid="uid://26hv3xsv8cet"
+path="res://.godot/imported/arina.png-25b4a88da638baea696384a0025fe5ac.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://database/asset/stiker/gak_logis.png"
-dest_files=["res://.godot/imported/gak_logis.png-914e8980136669e74bfc69032a9918bb.ctex"]
+source_file="res://database/asset/character/arina.png"
+dest_files=["res://.godot/imported/arina.png-25b4a88da638baea696384a0025fe5ac.ctex"]
 
 [params]
 

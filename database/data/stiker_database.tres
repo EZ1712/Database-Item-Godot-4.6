@@ -7,52 +7,59 @@ script = ExtResource("4_il8sd")
 data = {
 0: {
 "description": "dadwa",
-"image": "res://database/asset/stiker/nungguin_rilis_ya.png",
-"image_preview": "res://database/asset/stiker/nungguin_rilis_ya.png",
+"image": "uid://b1lvufqy826sm",
+"image_preview": "uid://bu64t5o7ufrl7",
 "name": "Nungguin rilis ya?",
 "rarity": 5
 },
 1: {
 "description": "hrwda",
-"image": "res://database/asset/stiker/kecewa_berat.png",
-"image_preview": "res://database/asset/stiker/kecewa_berat.png",
+"image": "uid://dtekwpvfeci45",
+"image_preview": "uid://rvc1ittp754p",
 "name": "Kecewa Berat",
 "rarity": 6
 },
 2: {
 "description": "mjade",
-"image": "res://database/asset/stiker/agak_dongo_tapi_gapapa.png",
-"image_preview": "res://database/asset/stiker/agak_dongo_tapi_gapapa.png",
+"image": "uid://dak32vmat1mke",
+"image_preview": "uid://dnnbqp5464dfs",
 "name": "Agak dongo tapi gapapa",
 "rarity": 5
 },
 3: {
 "description": "orang gila memang",
-"image": "res://database/asset/stiker/gila_sih.png",
-"image_preview": "res://database/asset/stiker/gila_sih.png",
+"image": "uid://ib27q4ot00rh",
+"image_preview": "uid://dmrj05aiqbv3t",
 "name": "Gila sih",
 "rarity": 5
 },
 4: {
 "description": "memang gak logis",
-"image": "res://database/asset/stiker/gak_logis.png",
-"image_preview": "res://database/asset/stiker/gak_logis.png",
+"image": "uid://bkchf6awy5bos",
+"image_preview": "uid://bhy0n2aafo0tm",
 "name": "Gak logis",
 "rarity": 6
 },
 5: {
 "description": "Kelas SMP bang",
-"image": "res://database/asset/stiker/kelas_king.png",
-"image_preview": "res://database/asset/stiker/kelas_king.png",
+"image": "uid://dxbafa877vuqj",
+"image_preview": "uid://cq7cyeoicbmie",
 "name": "Kelas king",
 "rarity": 4
 },
 6: {
 "description": "gw udah muak sumpah",
-"image": "res://database/asset/stiker/malas_menanggapi.png",
-"image_preview": "res://database/asset/stiker/malas_menanggapi.png",
+"image": "uid://mlw87f7w0o5s",
+"image_preview": "uid://uamw0theitkw",
 "name": "Malas Menanggapi",
 "rarity": 5
+},
+7: {
+"description": "Untuk berjaga-jaga jika ada investigasi oleh pihak berwajib, saya tidak terlibat apapun dengan grup ini ataupun orang² didalamnya, saya tidak tahu bagaimana saya ada disini, mungkin diundang oleh pihak ketiga, saya tidak mendukung segala aksi yang dilakukan oleh anggota grup ini.",
+"image": "uid://t3432kchaov8",
+"image_preview": "uid://t3432kchaov8",
+"name": "Untuk berjaga-jaga",
+"rarity": 4
 }
 }
 metadata/_custom_type_script = "uid://c8sjqdol2rr0o"

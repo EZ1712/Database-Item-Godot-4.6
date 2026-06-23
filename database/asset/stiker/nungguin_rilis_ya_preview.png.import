@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkchf6awy5bos"
-path="res://.godot/imported/gak_logis.png-914e8980136669e74bfc69032a9918bb.ctex"
+uid="uid://bu64t5o7ufrl7"
+path="res://.godot/imported/nungguin_rilis_ya_preview.png-1c4e90f9120767c825b4b0d33cc9293a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://database/asset/stiker/gak_logis.png"
-dest_files=["res://.godot/imported/gak_logis.png-914e8980136669e74bfc69032a9918bb.ctex"]
+source_file="res://database/asset/stiker/nungguin_rilis_ya_preview.png"
+dest_files=["res://.godot/imported/nungguin_rilis_ya_preview.png-1c4e90f9120767c825b4b0d33cc9293a.ctex"]
 
 [params]
 

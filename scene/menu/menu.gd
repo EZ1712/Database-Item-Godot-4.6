@@ -22,7 +22,7 @@ func menu_display():
 		var button_menu = menu_template.instantiate()
 		button_menu.menu_data(data["name"])
 		
-		button_menu.menu_pressed.connect(func() : preview(data["database"]))
+		button_menu.menu_pressed.connect(func() : preview(data["database"], data["name"]))
 		
 		menu_list.add_child(button_menu)
 	#pass
@@ -30,13 +30,14 @@ func menu_display():
 #func debug(indikator):
 	#print(str(indikator))
 
-func preview(database):
+func preview(database, name_database):
 	var preview_transition = preview_detail_template.instantiate()
 	
 	get_tree().root.add_child(preview_transition)
 	get_tree().current_scene = preview_transition
 	
 	preview_transition.current_database = database
+	preview_transition.database_ui = name_database
 	preview_transition.preview_data()
 	
 	queue_free()

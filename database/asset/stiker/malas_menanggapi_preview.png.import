@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bkchf6awy5bos"
-path="res://.godot/imported/gak_logis.png-914e8980136669e74bfc69032a9918bb.ctex"
+uid="uid://uamw0theitkw"
+path="res://.godot/imported/malas_menanggapi_preview.png-51246a917bcdc48e7f0c149d51b47bf5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://database/asset/stiker/gak_logis.png"
-dest_files=["res://.godot/imported/gak_logis.png-914e8980136669e74bfc69032a9918bb.ctex"]
+source_file="res://database/asset/stiker/malas_menanggapi_preview.png"
+dest_files=["res://.godot/imported/malas_menanggapi_preview.png-51246a917bcdc48e7f0c149d51b47bf5.ctex"]
 
 [params]
 

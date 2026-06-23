@@ -10,6 +10,7 @@ var menu_and_preview : PackedScene = load("res://scene/menu_and_preview/menu_and
 var sorting_method_send : String
 var database_current : String
 var filter_target_send : String
+var title_send : String
 
 func detail_data(database, id):
 	var raw_database : Dictionary = self.get(database)
@@ -19,6 +20,8 @@ func detail_data(database, id):
 	$PanelMain/ControlDetail/PanelDetail/PanelContainer/MarginContainer/VBoxContainer/LabelRarity.text = str(data["rarity"])
 	$PanelMain/TextureImage.texture = load(data["image"])
 	$PanelMain/ControlDetail/PanelDetail/Panel/MarginContainer2/ColorRect.color = rarity_color(data["rarity"])
+	$PanelMain/ControlDetail/PanelDetail/PanelContainer/MarginContainer/VBoxContainer/LabelDescription.text = str(data["description"])
+	$LabelTitle.text = str(title_send)
 	#$LabelDatabase.text = str(database)
 	#$Panel/Panel/Label.text = str(name_display)
 	
@@ -44,6 +47,7 @@ func _on_button_back_pressed() -> void:
 	menu_preview_scene.current_database = database_current
 	menu_preview_scene.filter_target = filter_target_send
 	menu_preview_scene.preview_display(database_current)
+	menu_preview_scene.title = title_send
 	menu_preview_scene.ui_change()
 	
 	queue_free()

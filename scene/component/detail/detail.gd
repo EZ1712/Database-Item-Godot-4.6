@@ -5,6 +5,7 @@ extends Control
 var character_database : Dictionary = load("res://database/data/character_database.tres").data
 var stiker_database : Dictionary = load("res://database/data/stiker_database.tres").data
 
+var preview_scene : PackedScene = load("res://scene/preview/preview.tscn")
 var menu_and_preview : PackedScene = load("res://scene/menu_and_preview/menu_and_preview.tscn")
 
 var sorting_method_send : String
@@ -34,7 +35,8 @@ func rarity_color(rarity):
 		4: return Color("960DF1")
 
 func _on_button_back_pressed() -> void:
-	var menu_preview_scene = menu_and_preview.instantiate()
+	#var menu_preview_scene = menu_and_preview.instantiate()
+	var menu_preview_scene = preview_scene.instantiate()
 	
 	get_tree().root.add_child(menu_preview_scene)
 	get_tree().current_scene = menu_preview_scene
@@ -46,7 +48,8 @@ func _on_button_back_pressed() -> void:
 	
 	menu_preview_scene.current_database = database_current
 	menu_preview_scene.filter_target = filter_target_send
-	menu_preview_scene.preview_display(database_current)
+	#menu_preview_scene.preview_display(database_current)
+	menu_preview_scene.preview_data()
 	menu_preview_scene.title = title_send
 	menu_preview_scene.ui_change()
 	

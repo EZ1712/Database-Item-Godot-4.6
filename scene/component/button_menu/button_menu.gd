@@ -2,9 +2,9 @@ extends Control
 
 signal menu_pressed
 
-func menu_data(name):
+func menu_data(name, image):
 	$Button/LabelTitle.text = str(name)
-	pass
+	$Button/TextureRect.texture = image
 
 func _on_button_pressed() -> void:
 	menu_pressed.emit()

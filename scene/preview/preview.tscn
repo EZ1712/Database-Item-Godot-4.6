@@ -1,0 +1,262 @@
+[gd_scene format=3 uid="uid://bgfi663djyo4x"]
+
+[ext_resource type="Script" uid="uid://b7jhe6g6y7pob" path="res://scene/preview/preview.gd" id="1_ipfdg"]
+[ext_resource type="PackedScene" uid="uid://bphgityydx8gj" path="res://scene/component/button_preview/button_preview.tscn" id="1_qdudf"]
+
+[sub_resource type="Theme" id="Theme_qdudf"]
+OptionButton/font_sizes/font_size = 24
+PopupMenu/font_sizes/font_size = 24
+
+[node name="Preview" type="Control" unique_id=1591913484]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ipfdg")
+
+[node name="LabelTitle" type="Label" parent="." unique_id=1084768622]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 30.0
+offset_right = 280.0
+offset_bottom = 97.0
+theme_override_font_sizes/font_size = 48
+text = "[Database]"
+
+[node name="PanelPreview" type="Panel" parent="." unique_id=1757048396]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -930.0
+offset_top = -422.0
+offset_right = 930.0
+offset_bottom = 408.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="PanelPreview" unique_id=99164343]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelPreview/ScrollContainer" unique_id=1907930367]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="GridContainer" type="GridContainer" parent="PanelPreview/ScrollContainer/MarginContainer" unique_id=852314765]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 14
+theme_override_constants/v_separation = 24
+columns = 9
+
+[node name="ButtonPreview" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=2031525819 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview13" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=798451414 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview14" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=908046207 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview15" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1150696014 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview16" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1468209966 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview17" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=670720876 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview18" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=29186721 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview19" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1921343196 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview20" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1085557581 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview21" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=603241903 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview22" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1166694612 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview23" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=612275326 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview24" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=187585608 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview25" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=131292233 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview26" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1708216823 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview27" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1908717036 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview28" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=937806290 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview29" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1138068671 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview30" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1251535914 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview31" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1004166738 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview32" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1206367618 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview33" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=953712277 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview34" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1398988584 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview35" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1928311685 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview2" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=719746635 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview3" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1057459382 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview4" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1100061759 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview5" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1663911494 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview6" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=2125215495 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview7" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1135709483 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview8" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1091759156 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview9" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=828122459 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview10" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=1159796079 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview11" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=2128139346 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="ButtonPreview12" parent="PanelPreview/ScrollContainer/MarginContainer/GridContainer" unique_id=184198720 instance=ExtResource("1_qdudf")]
+visible = false
+layout_mode = 2
+
+[node name="PanelNavigation" type="Panel" parent="." unique_id=491338276]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 30.0
+offset_top = -97.0
+offset_right = 270.0
+offset_bottom = -57.0
+grow_vertical = 0
+
+[node name="ButtonAscending" type="Button" parent="PanelNavigation" unique_id=1479821838]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 120.0
+offset_top = -21.0
+offset_right = 240.0
+offset_bottom = 21.0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 23
+text = "DESC"
+
+[node name="FilterMenu" type="OptionButton" parent="PanelNavigation" unique_id=1457228788]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -20.0
+offset_right = 120.0
+offset_bottom = 20.0
+grow_vertical = 2
+theme = SubResource("Theme_qdudf")
+selected = 0
+item_count = 4
+popup/item_0/text = "Rarity"
+popup/item_0/id = 0
+popup/item_1/text = "*6"
+popup/item_1/id = 1
+popup/item_2/text = "*5"
+popup/item_2/id = 2
+popup/item_3/text = "*4"
+popup/item_3/id = 3
+
+[node name="ButtonBack" type="Button" parent="." unique_id=480757106]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -110.0
+offset_top = 19.0
+offset_right = -30.0
+offset_bottom = 99.0
+grow_horizontal = 0
+
+[connection signal="pressed" from="PanelNavigation/ButtonAscending" to="." method="_on_button_ascending_pressed"]
+[connection signal="item_selected" from="PanelNavigation/FilterMenu" to="." method="_on_filter_menu_item_selected"]
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]

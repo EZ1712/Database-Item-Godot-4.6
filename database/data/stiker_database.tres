@@ -5,13 +5,6 @@
 [resource]
 script = ExtResource("4_il8sd")
 data = {
-0: {
-"description": "dadwa",
-"image": "uid://b1lvufqy826sm",
-"image_preview": "uid://bu64t5o7ufrl7",
-"name": "Nungguin rilis ya?",
-"rarity": 5
-},
 1: {
 "description": "hrwda",
 "image": "uid://dtekwpvfeci45",
@@ -60,6 +53,517 @@ data = {
 "image_preview": "uid://t3432kchaov8",
 "name": "Untuk berjaga-jaga",
 "rarity": 4
+},
+8: {
+"description": "biasa",
+"image": "uid://dcvi2hf5jbqor",
+"image_preview": "uid://cvhvodbbeejdi",
+"name": "Ada ada saja",
+"rarity": 4
+},
+9: {
+"description": "kerjain sendiri",
+"image": "uid://cfcuftmg8r253",
+"image_preview": "uid://ut33hk1aa48m",
+"name": "Aja sendiri",
+"rarity": 6
+},
+10: {
+"description": "lu aja",
+"image": "uid://bi3lgbry35el6",
+"image_preview": "uid://dbp3r8walx6ls",
+"name": "Aja sendiri",
+"rarity": 5
+},
+11: {
+"description": "pengguna fusnuk ",
+"image": "uid://ycwd5vj1l0is",
+"image_preview": "uid://dxc1bgri0cq8e",
+"name": "Aji Pisang",
+"rarity": 6
+},
+12: {
+"description": "Alternatif lain \"Aku juga mw\"",
+"image": "uid://d05ng0ryudk4p",
+"image_preview": "uid://cn6sjn6ne8ijw",
+"name": "Aku Mau",
+"rarity": 4
+},
+13: {
+"description": "Reisa",
+"image": "uid://2u2t7h7vbs65",
+"image_preview": "uid://cd008hphrod2s",
+"name": "Anda rasis saya skibidi gyat",
+"rarity": 4
+},
+14: {
+"description": "apalah",
+"image": "uid://by5ihrcqxflvu",
+"image_preview": "uid://cibf3ksrikowq",
+"name": "Apa Pula",
+"rarity": 4
+},
+15: {
+"description": "Muka biasa hati tertawa",
+"image": "uid://dlr85axx2hpgb",
+"image_preview": "uid://dnvdjj1w4mr26",
+"name": "Awok",
+"rarity": 4
+},
+16: {
+"description": "Mending turu ygy",
+"image": "uid://cct0utsgse1nt",
+"image_preview": "uid://cgmpk3g4okccd",
+"name": "A Mimir",
+"rarity": 4
+},
+17: {
+"description": "Alternatif teks \"Bersiaplah\"",
+"image": "uid://chb481m8dxd0o",
+"image_preview": "uid://swtx176xw2px",
+"name": "Baik lah",
+"rarity": 4
+},
+18: {
+"description": "digunakan ketika mengkomentari sesuatu yang diluar nalar",
+"image": "uid://cjpxfp75n12lf",
+"image_preview": "uid://cm6q8t7lgf55u",
+"name": "Berpendidikan Tinggi",
+"rarity": 5
+},
+19: {
+"description": "Digunakan ketika ada ajakan dan malas untuk mengikutinya",
+"image": "uid://dudbcqvng7o3a",
+"image_preview": "uid://biiqekgke1wqx",
+"name": "Besok Aja",
+"rarity": 4
+},
+20: {
+"description": "Digunakan untuk mengomentari suatu hal yang tidak bisa kita pahami ",
+"image": "uid://63rkhrrgd2s8",
+"image_preview": "uid://cli5exrdnks42",
+"name": "Bingung Saya",
+"rarity": 4
+},
+21: {
+"description": "digunakan oleh karbit ketika melihat cewek anime/cosplayer/cantik, cara counter stiker ini dengan menggunakan stiker \"bukan.png\"\"",
+"image": "uid://coa7xrgvvn3sc",
+"image_preview": "uid://btsgi8fumsj13",
+"name": "Bukankah ini istri guw",
+"rarity": 6
+},
+22: {
+"description": "Digunakan oleh fans bocchi the rock untuk mengomentari sesuatu yang dirasa sedih/lucu/diluar nalar",
+"image": "uid://clcj5301l2ej0",
+"image_preview": "uid://b58wjkm3htaep",
+"name": "Buwok",
+"rarity": 4
+},
+23: {
+"description": "Digunakan untuk mengomentari sesuatu yang dirasa memberikan beban yang sangat berat sehingga sangat terasa sangat melelahkan",
+"image": "uid://byyhmx6gp4kok",
+"image_preview": "uid://dxx4cuyx2rxpt",
+"name": "Capek Wak",
+"rarity": 4
+},
+24: {
+"description": "Digunakan untuk mengkomentari sesuatu yang mengandung kontek NSFW",
+"image": "uid://cq0o8jkatuuls",
+"image_preview": "uid://8rqd5lhhedwy",
+"name": "Celananya tolong dipakai",
+"rarity": 6
+},
+25: {
+"description": "Digunakan ketika melihat sesuatu yang diluar kendali manusia",
+"image": "uid://cysdfi8lxibg7",
+"image_preview": "uid://by78k2fgtlpsj",
+"name": "Dahsyat",
+"rarity": 4
+},
+26: {
+"description": "Digunakan ketika melihat sesuatu yang diluar kendali nalar manusia",
+"image": "uid://7rjsp5a761fm",
+"image_preview": "uid://dky8j3ka80t35",
+"name": "Diluar kendali",
+"rarity": 4
+},
+27: {
+"description": "Digunakan ketika ada sebuah ide yang nyeleneh namun ada benarnya",
+"image": "uid://y4ipeufe85cy",
+"image_preview": "uid://vdaktv34nlo5",
+"name": "Dipikir pikir boleh juga",
+"rarity": 5
+},
+28: {
+"description": "Doksli dari Stiker \"dua orang.png\", digunakan untuk menunjukan suatu hal yang ada dua walaupun kenyataanya hanya satu",
+"image": "uid://dgwogsbtx31pl",
+"image_preview": "uid://bn20hff48y4o6",
+"name": "Dua Orang",
+"rarity": 5
+},
+29: {
+"description": "Digunakan untuk menkomentari sesuatu yang gila",
+"image": "uid://cjepqr5knkg2j",
+"image_preview": "uid://bb6sqi57xn7wl",
+"name": "Edan",
+"rarity": 4
+},
+30: {
+"description": "Digunakan ketika Moondrop mengeluarkan IEM terbaru dengan box waifu",
+"image": "uid://ohrc51wvduid",
+"image_preview": "uid://cxek0fy7q61n8",
+"name": "Edan taktik Moondrop",
+"rarity": 4
+},
+31: {
+"description": "Digunakan ketika membalas suatu postingan yang menghina king PHP",
+"image": "uid://uo3nv3nlot4c",
+"image_preview": "uid://c6id0aayycogs",
+"name": "Emang kenapa kalo aku PHP",
+"rarity": 6
+},
+32: {
+"description": "Digunakan ketika mengkomentari sesuatu yang terasa enak",
+"image": "uid://bjqnj78lfhqnl",
+"image_preview": "uid://cjnxfm3ampowo",
+"name": "Enak bet bangke",
+"rarity": 4
+},
+33: {
+"description": "Digunakan ketika melihat sesuatu yang sangat terang",
+"image": "uid://cn0chf0ilfjh0",
+"image_preview": "uid://b0l47uxxjjpix",
+"name": "Flashbang",
+"rarity": 5
+},
+34: {
+"description": "Digunakan ketika ada yang meminjam uang namun hanya ada uang besar (secara harfiah)",
+"image": "uid://8xcmtk4u4gg6",
+"image_preview": "uid://ctsk6ncaabyce",
+"name": "Gak ada uang kecil",
+"rarity": 4
+},
+35: {
+"description": "Digunakan ketika mendapat ajakan namun enggan untuk mengikutinya",
+"image": "uid://ct8w8vpapeojy",
+"image_preview": "uid://bwukiwsmiwalt",
+"name": "Gak dulu",
+"rarity": 6
+},
+36: {
+"description": "Digunakan ketika ingin mentarget seseorang",
+"image": "uid://dv584fmcfkif5",
+"image_preview": "uid://b7shtpmu1surd",
+"name": "Gw tandain lo",
+"rarity": 4
+},
+37: {
+"description": "Digunakan ketika pasrah dengan keadaan dan hanya bisa tersenyum ",
+"image": "uid://ecvm02nnqwhy",
+"image_preview": "uid://cm2mveurrd1my",
+"name": "Hanya bisa tersenyum",
+"rarity": 4
+},
+38: {
+"description": "Digunakan ketika merespon sesuatu yang aneh atau tidak umum",
+"image": "uid://di7gtjomnw27b",
+"image_preview": "uid://cdwfn34ulp0py",
+"name": "Iki opo cok",
+"rarity": 4
+},
+39: {
+"description": "Digunakan ketika ada ide atau informasi yang menarik",
+"image": "uid://c32lq4wl8euxs",
+"image_preview": "uid://xltirkh51scu",
+"name": "Interesting",
+"rarity": 4
+},
+40: {
+"description": "Digunakan ketika menasehati agar tidak mencoba hal tersebut",
+"image": "uid://33a1an12lik",
+"image_preview": "uid://cb4pdfmbhctrh",
+"name": "Itu tidak baik",
+"rarity": 4
+},
+41: {
+"description": "Pamer Iwak wak",
+"image": "uid://bdaa71q850uax",
+"image_preview": "uid://djbylde7i6w14",
+"name": "Iwak",
+"rarity": 4
+},
+42: {
+"description": "Digunakan ketika membalas komentar/ide yang sangat brilian dengan sarkas",
+"image": "uid://bqiqu5414vb0t",
+"image_preview": "uid://bj72ejtr6x2gd",
+"name": "Iya bang mantap",
+"rarity": 4
+},
+43: {
+"description": "Digunakan ketika ingin menjelaskan sesuatu",
+"image": "uid://67scvxmunht7",
+"image_preview": "uid://bum3lnrcs7x43",
+"name": "Jadi gini le",
+"rarity": 4
+},
+44: {
+"description": "Digunakan untuk menunjukan bahwa kebal terhadap sesuatu yang berbau 4NO",
+"image": "uid://ba5lvplqwntbb",
+"image_preview": "uid://e5p4ehs3cj2d",
+"name": "Kebal Sange",
+"rarity": 6
+},
+45: {
+"description": "Digunakan ketika ingin mendapatkan penjelasan yang lebih jelas dari sebelumnya",
+"image": "uid://dllgceo2g30ag",
+"image_preview": "uid://dpywd8xqa0cng",
+"name": "Kurang jelas tolong diperjelas",
+"rarity": 4
+},
+46: {
+"description": "Digunakan ketika melihat sesuatu yang lagi viral",
+"image": "uid://dlenva1nwxkn1",
+"image_preview": "uid://bct2s3wpby7ah",
+"name": "Lagi naik daun",
+"rarity": 4
+},
+47: {
+"description": "Lingang Guliguli",
+"image": "uid://bk3cqlh5m778l",
+"image_preview": "uid://dfqtdys7ey2ah",
+"name": "Lingang Guliguli",
+"rarity": 4
+},
+48: {
+"description": "Digunakan ketika menyimak sesuatu dengan sangat teliti",
+"image": "uid://ohpi11rlybbh",
+"image_preview": "uid://cdhfimjvwi6qa",
+"name": "Looking Respecfully",
+"rarity": 4
+},
+49: {
+"description": "Digunakan ketika membalas sesuatu dengan sarkas",
+"image": "uid://dhistytp08eol",
+"image_preview": "uid://d354hpojpuj51",
+"name": "Lu dongo apa gimana",
+"rarity": 4
+},
+50: {
+"description": "Digunakan ketika merespon sesuatu denga sangat malas",
+"image": "uid://6tf78u7bm46i",
+"image_preview": "uid://cfbcka6h5r0rr",
+"name": "Males banget",
+"rarity": 4
+},
+51: {
+"description": "Manipulator pengendali ",
+"image": "uid://dg2vaif7rxi52",
+"image_preview": "uid://csdswiiasd832",
+"name": "Manipulator",
+"rarity": 6
+},
+52: {
+"description": "Digunakan ketika merespon sesuatu dengan tidak senang",
+"image": "uid://c4ppk6m2nw2ec",
+"image_preview": "uid://cog4j30hjkqaa",
+"name": "Menatap tidak senang",
+"rarity": 4
+},
+53: {
+"description": "Digunakan ketika merespon sesuatu yang dimana tidur adalah kegiatan lebih baik",
+"image": "uid://c0c1u65ror1co",
+"image_preview": "uid://bqrs8bu65ej75",
+"name": "Mending tidur",
+"rarity": 4
+},
+54: {
+"description": "Digunakan ketika merespon sesuatu yang yang sangat keren dan tidak pernah dipikirkan secara nalar",
+"image": "uid://cexnqcs5s6qvb",
+"image_preview": "uid://b4udjsjq787kx",
+"name": "Menyala Abangkuh",
+"rarity": 6
+},
+55: {
+"description": "Digunakan ketika merespon sesuatu yang keren",
+"image": "uid://bgjkv7rfvh6ev",
+"image_preview": "uid://xmcglda6q0jp",
+"name": "Merasa Keren",
+"rarity": 4
+},
+56: {
+"description": "Digunakan ketika merespon sesuatu yang membuat merinding",
+"image": "uid://bip6tq0hru3s6",
+"image_preview": "uid://buedbw2a0w11r",
+"name": "Merinding",
+"rarity": 4
+},
+57: {
+"description": "digunakan ketikia merespon fakta yang tidak bisa dibantah",
+"image": "uid://dsm5twm27w1up",
+"image_preview": "uid://btimi2crd3d2u",
+"name": "Nelen Fakta",
+"rarity": 5
+},
+58: {
+"description": "Digunakan ketika merespon sesuatu yang memancing amarah",
+"image": "uid://b3iqn0q16jk3r",
+"image_preview": "uid://dkwxr5xk385oy",
+"name": "Njaluk diantemi",
+"rarity": 4
+},
+59: {
+"description": "Digunakan ketika mempunyai ide yang sangat briliant",
+"image": "uid://cgwooljiqfpng",
+"image_preview": "uid://dbbwgag5nvg0r",
+"name": "Nyengir",
+"rarity": 6
+},
+60: {
+"description": "Digunakan ketika burger bangor diskon 20%",
+"image": "uid://npcebdein2uo",
+"image_preview": "uid://bv3cuvccxwc2e",
+"name": "Pesankan dulu le",
+"rarity": 6
+},
+61: {
+"description": "Digunakan untuk menanyakan sesuatu",
+"image": "uid://b1xg6e47mbkgb",
+"image_preview": "uid://b6fw5bmn5h4jv",
+"name": "Piye",
+"rarity": 4
+},
+62: {
+"description": "Digunakan ketika ingin diajak untuk mabar",
+"image": "uid://3s5ynfh25t3g",
+"image_preview": "uid://dsbkui8rcjtmb",
+"name": "Plis bang ajak gue",
+"rarity": 4
+},
+63: {
+"description": "Digunakan ketika ada suatu yang tidak beradab",
+"image": "uid://bsk4kpk7dsupt",
+"image_preview": "uid://1o010x71smln",
+"name": "Sangat tidak beradab",
+"rarity": 6
+},
+64: {
+"description": "Digunakan untuk merespon sesuatu dengan santai",
+"image": "uid://bi2lpn0d211y1",
+"image_preview": "uid://dajcc6tymxi02",
+"name": "Santai dulu gak sih",
+"rarity": 6
+},
+65: {
+"description": "Digunakan ketika merespon sesuatu yang setress",
+"image": "uid://cywewy1ir7vq8",
+"image_preview": "uid://dnbis7uniyokb",
+"name": "Sedikit setress sisanya setress bgt",
+"rarity": 4
+},
+66: {
+"description": "Digunakan ketika meratapi nasib",
+"image": "uid://cb21jfvo22lcp",
+"image_preview": "uid://cia2yb01wvjx5",
+"name": "Semakin Hari",
+"rarity": 5
+},
+67: {
+"description": "Digunakan ketika terdapat sesuatu yang sesat",
+"image": "uid://clyktrub6wxnn",
+"image_preview": "uid://dskjvp22ip8fd",
+"name": "Sesat sesat",
+"rarity": 5
+},
+68: {
+"description": "Digunakan ketika terkejut",
+"image": "uid://crdmngkpby52l",
+"image_preview": "uid://ljeaxug2l4yh",
+"name": "Siapa sangka",
+"rarity": 4
+},
+69: {
+"description": "Digunakan ketika jam sudah menunjukan waktunya",
+"image": "uid://2qgaeds5riyp",
+"image_preview": "uid://cm6wdt88ycdnv",
+"name": "Soro soro jikan da",
+"rarity": 4
+},
+70: {
+"description": "Digunakan ketika ahhihihih",
+"image": "uid://d2w5b43qoapae",
+"image_preview": "uid://di132sphh1ntf",
+"name": "Sulit dimengerti semoga harimu ahihihihi",
+"rarity": 6
+},
+71: {
+"description": "digunakan untuk memesan teh tarik tige",
+"image": "uid://e67x7725gqdd",
+"image_preview": "uid://cwuq3wlin3i0d",
+"name": "Teh tarik tige",
+"rarity": 4
+},
+72: {
+"description": "Tergantung",
+"image": "uid://b4630idqc1lb4",
+"image_preview": "uid://f0ap6r43exqq",
+"name": "Tergantung orangnya",
+"rarity": 4
+},
+73: {
+"description": "Digunakan untuk berterima kasih",
+"image": "uid://0y0otu5ixqil",
+"image_preview": "uid://cpnvmi8nbam3x",
+"name": "Terima Kasih",
+"rarity": 5
+},
+74: {
+"description": "Digunakan ketika tertawa namun dengan hati yang terluka",
+"image": "uid://bqldbn23k384i",
+"image_preview": "uid://sw1psvprlytn",
+"name": "Tertawa tapi terluka",
+"rarity": 6
+},
+75: {
+"description": "Digunakan ketika seseorang yang dihitamkan atau gosong karena digoreng oleh drama ",
+"image": "uid://c4mrr786q7vb6",
+"image_preview": "uid://dr1pqd6it18fy",
+"name": "Tewas dihitamkan",
+"rarity": 6
+},
+76: {
+"description": "Digunakan untuk menjelaskan sesuatu yang tidak nyata",
+"image": "uid://dt7g0y5wvpbvi",
+"image_preview": "uid://bfq2xe55tcli2",
+"name": "Tidak aseli",
+"rarity": 5
+},
+77: {
+"description": "Digunakan ketika merespon sesuatu yang tidak menggoda",
+"image": "uid://b4r5x6aephnhw",
+"image_preview": "uid://5hwmgex1vlgw",
+"name": "Tidak menggoda",
+"rarity": 5
+},
+78: {
+"description": "Digunakan ketika merasa kurang tahu",
+"image": "uid://dankxdatv0buk",
+"image_preview": "uid://ugiywpooe4ns",
+"name": "Waduh kurang tahu",
+"rarity": 5
+},
+79: {
+"description": "Digunakan untuk mengidentifikasi sosok admin",
+"image": "uid://bwch10k0g8iu6",
+"image_preview": "uid://cw08emni8wbsr",
+"name": "Wujud asli admin",
+"rarity": 5
+},
+80: {
+"description": "Digunakan ketika pasrah dan tidak ada pilihan lain",
+"image": "uid://dyce8sgi7btdx",
+"image_preview": "uid://cdyw312iw5j6r",
+"name": "Yaudah mau gimana lagi",
+"rarity": 5
 }
 }
 metadata/_custom_type_script = "uid://c8sjqdol2rr0o"

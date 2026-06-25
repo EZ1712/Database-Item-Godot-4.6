@@ -3,7 +3,9 @@ extends Control
 var menu_scene : PackedScene = load("res://scene/menu/menu.tscn")
 var preview_template : PackedScene = load("res://scene/component/button_preview/button_preview.tscn")
 
-@onready var preview_list: GridContainer = $PreviewList/ScrollContainer/GridContainer
+#@onready var : GridContainer = $PreviewList/ScrollContainer/GridContainer
+@onready var preview_list: GridContainer = $PreviewList/ScrollContainer/MarginContainer/GridContainer
+
 @onready var filter_menu: OptionButton = $PanelNavigation/FilterMenu
 @onready var button_ascending: Button = $PanelNavigation/ButtonAscending
 @onready var label_database: Label = $LabelDatabase

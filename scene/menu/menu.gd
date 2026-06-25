@@ -15,6 +15,7 @@ var menu : Dictionary = {
 }
 
 func _ready() -> void:
+	$AnimationPlayer.play("enter_scene")
 	menu_display()
 
 func menu_display():
@@ -36,6 +37,9 @@ func preview(database, name_database):
 		preview_transition = preview_template.instantiate()
 	elif Global.flow == 2:
 		preview_transition = preview_detail_template.instantiate()
+	
+	$AnimationPlayer.play("exit_scene")
+	await $AnimationPlayer.animation_finished
 	
 	get_tree().root.add_child(preview_transition)
 	get_tree().current_scene = preview_transition

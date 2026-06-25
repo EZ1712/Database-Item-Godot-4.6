@@ -6,7 +6,8 @@ var menu_template : PackedScene = load("res://scene/component/button_menu_flat/b
 var detail_template : PackedScene = load("res://scene/component/detail/detail.tscn")
 
 @onready var menu_list: VBoxContainer = $MenuList/VBoxContainer
-@onready var preview_list: GridContainer = $PreviewList/ScrollContainer/GridContainer
+#@onready var preview_list: GridContainer = $PreviewList/ScrollContainer/GridContainer
+@onready var preview_list: GridContainer = $PreviewList/ScrollContainer/MarginContainer/GridContainer
 @onready var button_ascending: Button = $Panel/ButtonAscending
 @onready var filter_menu: OptionButton = $Panel/FilterMenu
 @onready var label_title: Label = $LabelTitle

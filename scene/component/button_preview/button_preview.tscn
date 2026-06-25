@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bphgityydx8gj"]
 
 [ext_resource type="Script" uid="uid://bgxjlnegk5o8h" path="res://scene/component/button_preview/button_preview.gd" id="1_ma63y"]
-[ext_resource type="Texture2D" uid="uid://dnnbqp5464dfs" path="res://database/asset/stiker/agak_dongo_preview.png" id="2_ma63y"]
+[ext_resource type="Texture2D" uid="uid://ut33hk1aa48m" path="res://database/asset/stiker/aja_sendiri_preview.png" id="2_fo2ws"]
 [ext_resource type="Texture2D" uid="uid://cxj8f5221g03s" path="res://assets/border_rarity.png" id="3_fo2ws"]
 
 [sub_resource type="Gradient" id="Gradient_fo2ws"]
@@ -13,6 +13,43 @@ resource_local_to_scene = true
 gradient = SubResource("Gradient_fo2ws")
 fill_from = Vector2(0.56164384, 1)
 fill_to = Vector2(0.55707765, 0)
+
+[sub_resource type="Animation" id="Animation_fo2ws"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_wkoui"]
+resource_name = "entered"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_21m6w"]
+_data = {
+&"RESET": SubResource("Animation_fo2ws"),
+&"entered": SubResource("Animation_wkoui")
+}
 
 [node name="ButtonPreview" type="Control" unique_id=2031525819]
 custom_minimum_size = Vector2(190, 250)
@@ -32,19 +69,21 @@ offset_right = 190.0
 offset_bottom = 190.0
 
 [node name="ImagePreview" type="TextureRect" parent="Button" unique_id=1783853651]
+custom_minimum_size = Vector2(180, 180)
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 1.0
 offset_left = -90.0
-offset_top = -90.0
+offset_top = -185.0
 offset_right = 90.0
-offset_bottom = 90.0
+offset_bottom = -5.0
 grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("2_ma63y")
+grow_vertical = 0
+texture = ExtResource("2_fo2ws")
+expand_mode = 1
 
 [node name="RarityBorder" type="TextureRect" parent="Button" unique_id=1021134955]
 visible = false
@@ -75,17 +114,17 @@ offset_bottom = 185.0
 
 [node name="TextureRect" type="TextureRect" parent="Button" unique_id=1506836489]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 1.0
 offset_left = -90.0
-offset_top = -90.0
+offset_top = -185.0
 offset_right = 90.0
-offset_bottom = 90.0
+offset_bottom = -5.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 texture = ExtResource("3_fo2ws")
 
 [node name="PanelContainer" type="PanelContainer" parent="." unique_id=1822490792]
@@ -107,5 +146,8 @@ theme_override_font_sizes/font_size = 20
 text = "[Name]"
 horizontal_alignment = 1
 autowrap_mode = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=509955967]
+libraries/ = SubResource("AnimationLibrary_21m6w")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -8,12 +8,16 @@ var stiker_database : Dictionary = load("res://database/data/stiker_database.tre
 var preview_scene : PackedScene = load("res://scene/preview/preview.tscn")
 var menu_and_preview : PackedScene = load("res://scene/menu_and_preview/menu_and_preview.tscn")
 
+@onready var animate: AnimationPlayer = $AnimationPlayer
+
 var sorting_method_send : String
 var database_current : String
 var filter_target_send : String
 var title_send : String
 
 func detail_data(database, id):
+	animate.play("enter_scene")
+	
 	var raw_database : Dictionary = self.get(database)
 	var data = raw_database[id]
 	
@@ -42,7 +46,10 @@ func _on_button_back_pressed() -> void:
 		menu_preview_scene = preview_scene.instantiate()
 	elif Global.flow == 3:
 		menu_preview_scene = menu_and_preview.instantiate()
-
+	
+	animate.play("exit_scene")
+	await animate.animation_finished
+	
 	get_tree().root.add_child(menu_preview_scene)
 	get_tree().current_scene = menu_preview_scene
 	

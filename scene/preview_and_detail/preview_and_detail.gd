@@ -5,6 +5,7 @@ var preview_template : PackedScene = load("res://scene/component/button_preview/
 
 #@onready var : GridContainer = $PreviewList/ScrollContainer/GridContainer
 @onready var preview_list: GridContainer = $PreviewList/ScrollContainer/MarginContainer/GridContainer
+@onready var animate: AnimationPlayer = $AnimationPlayer
 
 @onready var filter_menu: OptionButton = $PanelNavigation/FilterMenu
 @onready var button_ascending: Button = $PanelNavigation/ButtonAscending
@@ -26,7 +27,8 @@ var sorting_method : String = "desc"
 @onready var label_category: Label = $PanelDetail/MarginContainer/VBoxContainer/LabelCategory
 @onready var description: RichTextLabel = $PanelDetail/MarginContainer/VBoxContainer/Description
 
-
+func _ready() -> void:
+	animate.play("enter_scene")
 
 
 func preview_data():
@@ -114,6 +116,8 @@ func _on_button_debug_pressed() -> void:
 
 
 func _on_button_back_pressed() -> void:
+	animate.play("exit_scene")
+	await animate.animation_finished
 	get_tree().change_scene_to_packed(menu_scene)
 
 

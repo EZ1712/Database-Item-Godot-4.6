@@ -6,7 +6,8 @@ var menu_template : PackedScene = load("res://scene/component/button_menu_flat/b
 var detail_template : PackedScene = load("res://scene/component/detail/detail.tscn")
 
 @onready var menu_list: VBoxContainer = $MenuList/VBoxContainer
-#@onready var preview_list: GridContainer = $PreviewList/ScrollContainer/GridContainer
+@onready var animate: AnimationPlayer = $AnimationPlayer
+
 @onready var preview_list: GridContainer = $PreviewList/ScrollContainer/MarginContainer/GridContainer
 @onready var button_ascending: Button = $Panel/ButtonAscending
 @onready var filter_menu: OptionButton = $Panel/FilterMenu
@@ -30,6 +31,7 @@ var filter_target : String = "Rarity"
 var title : String = "Character"
 
 func _ready() -> void:
+	animate.play("enter_scene")
 	menu_display()
 	preview_display(current_database)
 	ui_change()
@@ -72,6 +74,9 @@ func preview_display(database):
 
 func detail(database, id):
 	var detail_scene = detail_template.instantiate()
+	
+	animate.play("exit_scene")
+	await animate.animation_finished
 	
 	get_tree().root.add_child(detail_scene)
 	get_tree().current_scene = detail_scene
@@ -150,4 +155,6 @@ func _on_debug_pressed() -> void:
 
 
 func _on_button_back_pressed() -> void:
+	animate.play("exit_scene")
+	await animate.animation_finished
 	get_tree().change_scene_to_packed(manager_scene)

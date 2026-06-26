@@ -2,6 +2,7 @@ extends Control
 
 
 @onready var menu_list: HBoxContainer = $MenuPreview/HBoxContainer
+@onready var animate: AnimationPlayer = $AnimationPlayer
 
 #var preview_detail_scene : PackedScene = load("res://scene/menu/preview_detail.tscn")
 var manager_scene : PackedScene = load("res://manager.tscn")
@@ -15,7 +16,7 @@ var menu : Dictionary = {
 }
 
 func _ready() -> void:
-	$AnimationPlayer.play("enter_scene")
+	animate.play("enter_scene")
 	menu_display()
 
 func menu_display():
@@ -38,8 +39,8 @@ func preview(database, name_database):
 	elif Global.flow == 2:
 		preview_transition = preview_detail_template.instantiate()
 	
-	$AnimationPlayer.play("exit_scene")
-	await $AnimationPlayer.animation_finished
+	animate.play("exit_scene")
+	await animate.animation_finished
 	
 	get_tree().root.add_child(preview_transition)
 	get_tree().current_scene = preview_transition
@@ -52,4 +53,6 @@ func preview(database, name_database):
 
 
 func _on_button_back_pressed() -> void:
+	animate.play("exit_scene")
+	await animate.animation_finished
 	get_tree().change_scene_to_packed(manager_scene)

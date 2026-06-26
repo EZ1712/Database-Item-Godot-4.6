@@ -8,6 +8,7 @@ var detail_template : PackedScene = load("res://scene/component/detail/detail.ts
 @onready var filter_menu: OptionButton = $PanelNavigation/FilterMenu
 @onready var button_ascending: Button = $PanelNavigation/ButtonAscending
 @onready var label_title: Label = $LabelTitle
+@onready var animate: AnimationPlayer = $AnimationPlayer
 
 var character_database : Dictionary = load("res://database/data/character_database.tres").data
 var stiker_database : Dictionary = load("res://database/data/stiker_database.tres").data
@@ -17,6 +18,9 @@ var current_database : String
 var filter_target : String = "Rarity"
 var sorting_method : String = "desc"
 var title : String = database_ui
+
+func _ready() -> void:
+	animate.play("enter_scene")
 
 func preview_data():
 	
@@ -42,6 +46,9 @@ func preview_data():
 
 func detail(database, id):
 	var detail_scene = detail_template.instantiate()
+	
+	animate.play("exit_scene")
+	await animate.animation_finished
 	
 	get_tree().root.add_child(detail_scene)
 	get_tree().current_scene = detail_scene
@@ -94,6 +101,8 @@ func ui_change():
 	label_title.text = str(title)
 
 func _on_button_back_pressed() -> void:
+	animate.play("exit_scene")
+	await animate.animation_finished
 	get_tree().change_scene_to_packed(menu_scene)
 
 

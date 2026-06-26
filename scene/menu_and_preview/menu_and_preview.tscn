@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://dmhuvbeoyjw7g"]
 
 [ext_resource type="Script" uid="uid://bvwg7soshubp1" path="res://scene/menu_and_preview/menu_and_preview.gd" id="1_wldhc"]
-[ext_resource type="PackedScene" uid="uid://bphgityydx8gj" path="res://scene/component/button_preview/button_preview.tscn" id="3_arsn6"]
 
 [sub_resource type="Theme" id="Theme_arsn6"]
 OptionButton/font_sizes/font_size = 24
@@ -63,42 +62,6 @@ layout_mode = 2
 theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
 columns = 6
-
-[node name="ButtonPreview" parent="PreviewList/ScrollContainer/MarginContainer/GridContainer" unique_id=2031525819 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview2" parent="PreviewList/ScrollContainer/MarginContainer/GridContainer" unique_id=1751643463 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview3" parent="PreviewList/ScrollContainer/MarginContainer/GridContainer" unique_id=912445704 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview4" parent="PreviewList/ScrollContainer/MarginContainer/GridContainer" unique_id=793241205 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview5" parent="PreviewList/ScrollContainer/MarginContainer/GridContainer" unique_id=1447586711 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview6" parent="PreviewList/ScrollContainer/MarginContainer/GridContainer" unique_id=1496746184 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview7" parent="PreviewList/ScrollContainer/MarginContainer/GridContainer" unique_id=1880330230 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview8" parent="PreviewList/ScrollContainer/MarginContainer/GridContainer" unique_id=1707578988 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
-
-[node name="ButtonPreview9" parent="PreviewList/ScrollContainer/MarginContainer/GridContainer" unique_id=1933667432 instance=ExtResource("3_arsn6")]
-visible = false
-layout_mode = 2
 
 [node name="Panel" type="Panel" parent="." unique_id=1840468527]
 layout_mode = 1

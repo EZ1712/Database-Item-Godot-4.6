@@ -10,8 +10,8 @@ var preview_detail_template : PackedScene = load("res://scene/preview_and_detail
 var menu_template : PackedScene = load("res://scene/component/button_menu/button_menu.tscn")
 
 var menu : Dictionary = {
-	1 : {"name" : "Character", "icon" : load("res://asset_sementaera/character.png"), "database" : "character_database"},
-	2 : {"name" : "Stiker", "icon" : load("res://asset_sementaera/stiker.png"), "database" : "stiker_database"}
+	1 : {"name" : "Character", "icon" : load("res://assets/character_icon.png"), "database" : "character_database"},
+	2 : {"name" : "Stiker", "icon" : load("res://assets/stiker_icon.png"), "database" : "stiker_database"}
 }
 
 func _ready() -> void:

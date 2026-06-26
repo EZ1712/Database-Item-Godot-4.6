@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://bphgityydx8gj"]
 
 [ext_resource type="Script" uid="uid://bgxjlnegk5o8h" path="res://scene/component/button_preview/button_preview.gd" id="1_ma63y"]
-[ext_resource type="Texture2D" uid="uid://ut33hk1aa48m" path="res://database/asset/stiker/aja_sendiri_preview.png" id="2_fo2ws"]
 [ext_resource type="Texture2D" uid="uid://cxj8f5221g03s" path="res://assets/border_rarity.png" id="3_fo2ws"]
 
 [sub_resource type="Gradient" id="Gradient_fo2ws"]
@@ -19,14 +18,14 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
+tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(0, 0)]
+"values": [Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="Animation" id="Animation_wkoui"]
@@ -35,14 +34,14 @@ length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath(".:position")
+tracks/0/path = NodePath(".:modulate")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0.5),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector2(0, 0)]
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_21m6w"]
@@ -82,7 +81,6 @@ offset_right = 90.0
 offset_bottom = -5.0
 grow_horizontal = 2
 grow_vertical = 0
-texture = ExtResource("2_fo2ws")
 expand_mode = 1
 
 [node name="RarityBorder" type="TextureRect" parent="Button" unique_id=1021134955]

@@ -17,8 +17,8 @@ var character_database : Dictionary = load("res://database/data/character_databa
 var stiker_database : Dictionary = load("res://database/data/stiker_database.tres").data
 
 var menu : Dictionary = {
-	1 : {"name" : "Character", "icon" : load("res://asset_sementaera/character.png"), "database" : "character_database"},
-	2 : {"name" : "Stiker", "icon" : load("res://asset_sementaera/stiker.png"), "database" : "stiker_database"}
+	1 : {"name" : "Character", "icon" : load("res://assets/character_icon.png"), "database" : "character_database"},
+	2 : {"name" : "Stiker", "icon" : load("res://assets/stiker_icon.png"), "database" : "stiker_database"}
 }
 
 var sorting_catogory

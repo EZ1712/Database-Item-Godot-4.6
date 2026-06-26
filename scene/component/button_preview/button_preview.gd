@@ -13,6 +13,7 @@ func preview_data(name_display, image_preview, rarity):
 	#$Button/RarityBorder.texture = border
 	$Button/TextureRect.modulate = rarity_color(rarity)
 	
+	$AnimationPlayer.play("entered")
 	#pass
 
 func rarity_color(rarity):

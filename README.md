@@ -6,6 +6,7 @@ There are 3 various Flows :
 - Flow 1 : Menu, Preview, Detail
 - Flow 2 : Menu, Preview and Detail
 - Flow 3 : Menu and preview, Detail
+
 *see the image
 
 In this project, I use a Dictionary to store the data and save it as a resource file .tres. I added Filter and Sort Function in this project to easier to find specific items.
